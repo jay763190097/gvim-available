@@ -1,8 +1,8 @@
 # gvim-available
 ![image](https://github.com/jay763190097/gvim-available/blob/master/QQ%E6%88%AA%E5%9B%BE20161208224117.png)
-" -----------------------------------------------------------------------------
-"  < 判断操作系统是否是 Windows 还是 Linux >
-" -----------------------------------------------------------------------------
+
+# 判断操作系统是否是 Windows 还是 Linux 
+``
 let g:iswindows = 0
 let g:islinux = 0
 if(has("win32") || has("win64") || has("win95") || has("win16"))
@@ -10,18 +10,19 @@ if(has("win32") || has("win64") || has("win95") || has("win16"))
 else
     let g:islinux = 1
 endif
+``
 
-" -----------------------------------------------------------------------------
-"  < 判断是终端还是 Gvim >
-" -----------------------------------------------------------------------------
+# 判断是终端还是 Gvim 
+``
 if has("gui_running")
     let g:isGUI = 1
 else
     let g:isGUI = 0
 endif
+``
 
-
-"==========================常规设置=============================
+# ==========================常规设置=============================
+``
 set nocompatible
 set fileencoding=utf-8                            "设置当前文件编码
 set fileencodings=utf-8,gb2312,gbk,gb18030     "设置支持打开的文件的编码
@@ -142,9 +143,10 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
+``
 
-
-"=============================插件安装和设置=================================
+# =============================插件安装和设置=================================
+``
 set rtp+=$VIM/vimfiles/bundle/Vundle.vim/
 call vundle#begin('$VIM/vimfiles/bundle/')
 
@@ -239,8 +241,9 @@ let g:airline_powerline_fonts = 1
   let g:airline_symbols.branch = '⭠'
   let g:airline_symbols.readonly = '⭤'
   let g:airline_symbols.linenr = '⭡'
-
-" emmet配置
+``
+# emmet配置
+``
 let g:user_emmet_install_global = 0
 let g:user_emmet_settings = {
     \'html' : {
@@ -248,9 +251,11 @@ let g:user_emmet_settings = {
     \}
 \}
 autocmd FileType html,css,sass,scss,less,php EmmetInstall
-
-"javacomplete配置
+``
+# javacomplete配置
+``
 setlocal omnifunc=javacomplete#Complete
 autocmd FileType java set omnifunc=javacomplete#Complete
 autocmd FileType java set completefunc=javacomplete#CompleteParamsInf
 autocmd FileType java inoremap
+``
