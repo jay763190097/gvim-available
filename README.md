@@ -1,4 +1,18 @@
 # gvim-available
+# 已经安装的插件
+auto-pairs
+bufexplorer
+emmet-vim
+javacomplete
+nerdtree
+tagbar
+vim-airline
+vim-colorshemes
+Vundle.vim
+winmanager
+
+已经在vim80中放入了ctags.exe
+
 ![image](https://github.com/jay763190097/gvim-available/blob/master/QQ%E6%88%AA%E5%9B%BE20161208224117.png)
 
 # 判断操作系统是否是 Windows 还是 Linux 
