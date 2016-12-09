@@ -207,6 +207,34 @@ map <F3> :NERDTreeToggle<CR>
 colorscheme freya     
 
 let g:airline_theme="luna" 
+"let g:airline_theme="solarized" 
+"let g:airline_theme="tomorrow" 
+"let g:airline_theme="base16" 
+"let g:airline_theme="lucius" 
+"let g:airline_theme="powerlineish" 
+"let g:airline_theme="molokai" 
+"let g:airline_theme="wombat" 
+"let g:airline_theme="sol" 
+"let g:airline_theme="murmur" 
+"let g:airline_theme="ubaryd" 
+"let g:airline_theme="badwolf" 
+"let g:airline_theme="bubblegum" 
+"let g:airline_theme="dark" 
+"let g:airline_theme="durant" 
+"let g:airline_theme="hybrid" 
+"let g:airline_theme="jellybeans" 
+"let g:airline_theme="kalisi" 
+"let g:airline_theme="laederon" 
+"let g:airline_theme="light" 
+"let g:airline_theme="monochrome" 
+"let g:airline_theme="raven" 
+"let g:airline_theme="serene" 
+"let g:airline_theme="silver" 
+"let g:airline_theme="simple" 
+"let g:airline_theme="raven" 
+"let g:airline_theme="understated" 
+"let g:airline_theme="zenburn" 
+let g:airline_section_b = '%{strftime("%c")}'
 
 "这个是安装字体后 必须设置此项" 
 let g:airline_powerline_fonts = 1   
@@ -247,8 +275,17 @@ let g:user_emmet_settings = {
 \}
 autocmd FileType html,css,sass,scss,less,php EmmetInstall
 
+
 "javacomplete配置
 setlocal omnifunc=javacomplete#Complete
 autocmd FileType java set omnifunc=javacomplete#Complete
 autocmd FileType java set completefunc=javacomplete#CompleteParamsInf
 autocmd FileType java inoremap
+
+
+setlocal omnifunc=javacomplete#Complete
+autocmd Filetype java set omnifunc=javacomplete#Complete                       
+autocmd Filetype java set completefunc=javacomplete#CompleteParamsInf
+inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P> 
+inoremap <buffer> <C-S-Space> <C-X><C-U><C-P>
+autocmd Filetype java,JavaScript,jsp inoremap <buffer>  .  .<C-X><C-O><C-P>
