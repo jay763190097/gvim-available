@@ -1,5 +1,6 @@
 # gvim-available
 # 已经安装的插件
+```
 auto-pairs
 bufexplorer
 emmet-vim
@@ -10,6 +11,7 @@ vim-airline
 vim-colorshemes
 Vundle.vim
 winmanager
+```
 
 已经在vim80中放入了ctags.exe
 
