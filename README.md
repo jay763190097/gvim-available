@@ -68,22 +68,22 @@ set hidden
 
 set laststatus=2    " 启动显示状态行(1),总是显示状态行(2)
 set number                      " 显示行号
-set expandtab                 " 是否在缩进和遇到Tab键时使用空格代替; 使用noexpandtab取消设置
+set expandtab                   " 是否在缩进和遇到Tab键时使用空格代替; 使用noexpandtab取消设置
 set autoindent                  " 自动缩进
 set cindent
 set confirm
-set smartindent                                       "启用智能对齐方式
+set smartindent                 "启用智能对齐方式
 set softtabstop=4
-set tabstop=4                                         "设置Tab键的宽度，可以更改，如：宽度为2
-set shiftwidth=4                                      "换行时自动缩进宽度，可更改（宽度同tabstop）
-set smarttab                                          "指定按一次backspace就删除shiftwidth宽度
-set foldenable                                        "启用折叠
-set foldmethod=manual                         "marker 自动折叠方式  indent 折叠方式   manual   手动折叠
+set tabstop=4                   "设置Tab键的宽度，可以更改，如：宽度为2
+set shiftwidth=4                "换行时自动缩进宽度，可更改（宽度同tabstop）
+set smarttab                    "指定按一次backspace就删除shiftwidth宽度
+set foldenable                  "启用折叠
+set foldmethod=manual           "marker 自动折叠方式  indent 折叠方式   manual   手动折叠
 " 常规模式下用空格键来开关光标行所在折叠（注：zR 展开所有折叠，zM 关闭所有折叠）
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
-set autoread                                           "当文件在外部被修改，自动更新该文件
-set ignorecase                                        "搜索模式里忽略大小写
-set smartcase                                         "如果搜索模式包含大写字符，不使用 'ignorecase' 选项，只有在输入搜索模式并且打开 
+set autoread                     "当文件在外部被修改，自动更新该文件
+set ignorecase                   "搜索模式里忽略大小写
+set smartcase                    "如果搜索模式包含大写字符，不使用 'ignorecase' 选项，只有在输入搜索模式并且打开 
 
 set showcmd              "在状态栏显示当前输入的命令
 set showmode       "显示INSERT NORMAL等
@@ -215,8 +215,8 @@ let g:tagbar_width = 30
 "let Tlist_Show_One_File=1                    "只显示当前文件的tags
 "let Tlist_Enable_Fold_Column=0              "使taglist插件不显示左边的折叠行
 "let Tlist_Exit_OnlyWindow=1                 "如果Taglist窗口是最后一个窗口则退出Vim
-"let Tlist_File_Fold_Auto_Close=1               "自动折叠
-"let Tlist_WinWidth=30                             "设置窗口宽度
+"let Tlist_File_Fold_Auto_Close=1            "自动折叠
+"let Tlist_WinWidth=30                       "设置窗口宽度
 "let Tlist_Use_Right_Window=1                "在右侧窗口中显示
 
 " NERDTree plugin
